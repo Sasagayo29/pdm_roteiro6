@@ -8,7 +8,6 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import kotlin.jvm.java
 
 class MainActivity : AppCompatActivity() {
 
@@ -47,7 +46,6 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         Log.d(TAG, "onResume() executado - Activity: MainActivity1 - Nome: $NOME_ALUNO")
 
-        // Recuperando dados salvos no SharedPreferences
         val nomeSalvo = sharedPreferences.getString("NOME_SALVO", "")
         val emailSalvo = sharedPreferences.getString("EMAIL_SALVO", "")
 
